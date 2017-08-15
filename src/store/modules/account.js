@@ -12,7 +12,7 @@ const state = {
   userId: localStorage.getItem(prefix + 'userId')
 }
 
-// Vue.http.headers.common['X-Access-Token'] = state.token
+Vue.http.headers.common['X-Access-Token'] = state.token
 
 // 相关的 mutations
 const mutations = {
