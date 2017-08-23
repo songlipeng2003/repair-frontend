@@ -25,6 +25,10 @@ import OrgDeviceViewPage from '@/views/org/DeviceViewPage'
 import OrgRepairPage from '@/views/org/RepairPage'
 import OrgRepairViewPage from '@/views/org/RepairViewPage'
 
+import SupplierHomePage from '@/views/supplier/HomePage'
+import SupplierRepairPage from '@/views/supplier/RepairPage'
+import SupplierRepairViewPage from '@/views/supplier/RepairViewPage'
+
 Vue.use(Router)
 
 export default new Router({
@@ -124,6 +128,20 @@ export default new Router({
     {
       path: '/org/device/:id/update',
       component: OrgDeviceFormPage
+    },
+
+    // supplier
+    {
+      path: '/supplier/',
+      component: SupplierHomePage
+    },
+    {
+      path: '/supplier/repair',
+      component: SupplierRepairPage
+    },
+    {
+      path: '/supplier/repair/:id',
+      component: SupplierRepairViewPage
     }
   ]
 })

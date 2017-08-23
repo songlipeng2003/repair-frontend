@@ -4,7 +4,7 @@
       <i slot="icon" class="iconfont icon-home"></i>
       首页
     </tab-item>
-    <tab-item id="tab-device">
+    <tab-item id="tab-device" v-if="loginedUserType!=3 && loginedUserType!=5">
       <i slot="icon" class="iconfont icon-device"></i>
       设备
     </tab-item>

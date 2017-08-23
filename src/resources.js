@@ -67,3 +67,19 @@ export const OrgDevice = Vue.resource(
 export const OrgHome = Vue.resource(
   'org/v1/homes{/id}'
 )
+
+export const SupplierRepair = Vue.resource(
+  'supplier/v1/repairs{/id}'
+)
+
+export const SupplierProject = Vue.resource(
+  'supplier/v1/projects{/id}'
+)
+
+export const SupplierServiceStation = Vue.resource(
+  'supplier/v1/service-stations{/id}'
+)
+
+export const SupplierHome = Vue.resource(
+  'supplier/v1/homes{/id}'
+)
