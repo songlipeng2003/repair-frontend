@@ -29,6 +29,10 @@ import SupplierHomePage from '@/views/supplier/HomePage'
 import SupplierRepairPage from '@/views/supplier/RepairPage'
 import SupplierRepairViewPage from '@/views/supplier/RepairViewPage'
 
+import StationHomePage from '@/views/station/HomePage'
+import StationRepairPage from '@/views/station/RepairPage'
+import StationRepairViewPage from '@/views/station/RepairViewPage'
+
 Vue.use(Router)
 
 export default new Router({
@@ -142,6 +146,20 @@ export default new Router({
     {
       path: '/supplier/repair/:id',
       component: SupplierRepairViewPage
+    },
+
+    // station
+    {
+      path: '/station/',
+      component: StationHomePage
+    },
+    {
+      path: '/station/repair',
+      component: StationRepairPage
+    },
+    {
+      path: '/station/repair/:id',
+      component: StationRepairViewPage
     }
   ]
 })

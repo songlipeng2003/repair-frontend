@@ -83,3 +83,12 @@ export const SupplierServiceStation = Vue.resource(
 export const SupplierHome = Vue.resource(
   'supplier/v1/homes{/id}'
 )
+
+export const StationRepair = Vue.resource(
+  'service-station/v1/repairs{/id}'
+)
+
+export const StationHome = Vue.resource(
+  'service-station/v1/homes{/id}'
+)
+
