@@ -1,7 +1,7 @@
 <template>
   <div>
     <mt-header :title="repair.code">
-      <router-link to="/repair" slot="left">
+      <router-link to="/supplier/repair" slot="left">
         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>

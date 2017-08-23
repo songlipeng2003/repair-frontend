@@ -1,7 +1,7 @@
 <template>
   <div>
     <mt-header title="设备">
-      <router-link to="/device/create" slot="right">
+      <router-link to="/school/device/create" slot="right">
         <mt-button ><i slot="icon" class="iconfont icon-message"></i></mt-button>
       </router-link>
     </mt-header>

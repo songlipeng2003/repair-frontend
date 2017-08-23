@@ -1,7 +1,7 @@
 <template>
   <div>
     <mt-header :title="device.name">
-      <router-link :to="`/device/${this.id}`" slot="left">
+      <router-link :to="`/school/device/${this.id}`" slot="left">
         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>
