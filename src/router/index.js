@@ -8,6 +8,7 @@ import MyPage from '@/views/MyPage'
 import LoginPage from '@/views/LoginPage'
 import ChangePasswordPage from '@/views/ChangePasswordPage'
 
+import SchoolHomePage from '@/views/school/HomePage'
 import SchoolDevicePage from '@/views/school/DevicePage'
 import SchoolDeviceFormPage from '@/views/school/DeviceFormPage'
 import SchoolDeviceRepairPage from '@/views/school/DeviceRepairPage'
@@ -16,6 +17,13 @@ import SchoolOpenDeviceRepairPage from '@/views/school/OpenDeviceRepairPage'
 import SchoolOpenRepairSuccessPage from '@/views/school/OpenRepairSuccessPage'
 import SchoolRepairPage from '@/views/school/RepairPage'
 import SchoolRepairViewPage from '@/views/school/RepairViewPage'
+
+import OrgHomePage from '@/views/org/HomePage'
+import OrgDeviceFormPage from '@/views/org/DeviceFormPage'
+import OrgDevicePage from '@/views/org/DevicePage'
+import OrgDeviceViewPage from '@/views/org/DeviceViewPage'
+import OrgRepairPage from '@/views/org/RepairPage'
+import OrgRepairViewPage from '@/views/org/RepairViewPage'
 
 Vue.use(Router)
 
@@ -44,6 +52,12 @@ export default new Router({
     {
       path: '/',
       component: HomePage
+    },
+
+    // school
+    {
+      path: '/school/',
+      component: SchoolHomePage
     },
     {
       path: '/school/repair',
@@ -80,6 +94,36 @@ export default new Router({
     {
       path: '/school/open/repair/success',
       component: SchoolOpenRepairSuccessPage
+    },
+
+    // org
+    {
+      path: '/org/',
+      component: OrgHomePage
+    },
+    {
+      path: '/org/repair',
+      component: OrgRepairPage
+    },
+    {
+      path: '/org/repair/:id',
+      component: OrgRepairViewPage
+    },
+    {
+      path: '/org/device',
+      component: OrgDevicePage
+    },
+    {
+      path: '/org/device/create',
+      component: OrgDeviceFormPage
+    },
+    {
+      path: '/org/device/:id',
+      component: OrgDeviceViewPage
+    },
+    {
+      path: '/org/device/:id/update',
+      component: OrgDeviceFormPage
     }
   ]
 })

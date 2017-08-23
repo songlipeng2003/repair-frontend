@@ -44,10 +44,26 @@ export const SchoolDevice = Vue.resource(
   'school/v1/devices{/id}'
 )
 
-export const Home = Vue.resource(
+export const SchoolHome = Vue.resource(
   'school/v1/homes{/id}'
 )
 
 export const SchoolProject = Vue.resource(
-  'school/v1/projects{/id}'
+  'org/v1/projects{/id}'
+)
+
+export const OrgProject = Vue.resource(
+  'org/v1/projects{/id}'
+)
+
+export const OrgRepair = Vue.resource(
+  'org/v1/repairs{/id}'
+)
+
+export const OrgDevice = Vue.resource(
+  'org/v1/devices{/id}'
+)
+
+export const OrgHome = Vue.resource(
+  'org/v1/homes{/id}'
 )

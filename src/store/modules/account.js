@@ -9,7 +9,7 @@ const prefix = 'repair_'
 const state = {
   logined: localStorage.getItem(prefix + 'logined'),
   token: localStorage.getItem(prefix + 'token'),
-  userType: localStorage.getItem(prefix + 'userType'),
+  userType: parseInt(localStorage.getItem(prefix + 'userType')),
   userId: localStorage.getItem(prefix + 'userId')
 }
 
