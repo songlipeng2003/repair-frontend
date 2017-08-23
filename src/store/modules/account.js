@@ -9,6 +9,7 @@ const prefix = 'repair_'
 const state = {
   logined: localStorage.getItem(prefix + 'logined'),
   token: localStorage.getItem(prefix + 'token'),
+  userType: localStorage.getItem(prefix + 'userType'),
   userId: localStorage.getItem(prefix + 'userId')
 }
 
@@ -19,10 +20,12 @@ const mutations = {
   [LOGIN] (state, user) {
     state.logined = true
     state.token = user.token
+    state.userType = user.user_type
     state.userId = user.id
 
     localStorage.setItem(prefix + 'logined', true)
     localStorage.setItem(prefix + 'token', user.token)
+    localStorage.setItem(prefix + 'userType', user.user_type)
     localStorage.setItem(prefix + 'userId', user.id)
 
     Vue.http.headers.common['X-Access-Token'] = state.token
@@ -30,10 +33,12 @@ const mutations = {
   [LOGOUT] (state) {
     state.logined = false
     state.token = null
+    state.userType = null
     state.userId = null
 
     localStorage.setItem(prefix + 'logined', false)
     localStorage.setItem(prefix + 'token', null)
+    localStorage.setItem(prefix + 'userType', null)
     localStorage.setItem(prefix + 'userId', null)
   }
 }

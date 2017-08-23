@@ -37,12 +37,23 @@ export default {
   },
   watch: {
     selected: function () {
+      let type = 'school'
+      if (this.loginedUserType === 2) {
+        type = 'school'
+      } else if (this.loginedUserType === 3) {
+        type = 'station'
+      } else if (this.loginedUserType === 4) {
+        type = 'org'
+      } else if (this.loginedUserType === 5) {
+        type = 'supplier'
+      }
+
       if (this.selected === 'tab-home') {
         this.$router.push('/')
       } else if (this.selected === 'tab-repair') {
-        this.$router.push('/repair')
+        this.$router.push(`/${type}/repair`)
       } else if (this.selected === 'tab-device') {
-        this.$router.push('/device')
+        this.$router.push(`/${type}/device`)
       } else if (this.selected === 'tab-my') {
         this.$router.push('/my')
       }
@@ -56,7 +67,8 @@ export default {
   computed: {
     ...mapGetters(
       [
-        'logined'
+        'logined',
+        'loginedUserType'
       ]
     )
   }

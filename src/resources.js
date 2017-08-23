@@ -48,6 +48,6 @@ export const Home = Vue.resource(
   'school/v1/homes{/id}'
 )
 
-export const Project = Vue.resource(
+export const SchoolProject = Vue.resource(
   'school/v1/projects{/id}'
 )

@@ -12,3 +12,7 @@ export const logined = state => {
 export const loginedUserId = state => {
   return state.account.userId
 }
+
+export const loginedUserType = state => {
+  return state.account.userType
+}
