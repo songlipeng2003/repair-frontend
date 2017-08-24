@@ -45,10 +45,10 @@ export default {
   },
   methods: {
     repair () {
-      this.$router.push(`/device/${this.id}/repair`)
+      this.$router.push(`/school/device/${this.id}/repair`)
     },
     update () {
-      this.$router.push(`/device/${this.id}/update`)
+      this.$router.push(`/school/device/${this.id}/update`)
     }
   }
 }

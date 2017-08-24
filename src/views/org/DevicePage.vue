@@ -6,7 +6,7 @@
     <div v-infinite-scroll="loadMore" infinite-scroll-disabled="disableLoadMore" infinite-scroll-distance="10" infinite-scroll-listen-for-event="refreshData">
       <mt-loadmore :top-method="refresh" ref="loadmore">
         <div v-for="device in devices" :key="device.id" class="card">
-          <router-link :to="'device/' + device.id">
+          <router-link :to="'/org/device/' + device.id">
             设备名:{{device.name}}<br/>
             位置:{{device.position ? device.position : '无'}}<br/>
             品牌:{{device.brand ? device.brand : '无'}} 型号:{{device.model ? device.model : '无'}}<br/>

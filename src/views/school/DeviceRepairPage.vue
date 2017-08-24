@@ -60,7 +60,7 @@ export default {
   methods: {
     repairAction () {
       SchoolRepair.save(this.repair).then((res) => {
-        this.$router.push('/repair')
+        this.$router.push('/school/repair')
       }).catch((response) => {
         MessageBox.alert(response.body.message)
       })

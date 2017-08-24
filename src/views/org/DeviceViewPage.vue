@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     update () {
-      this.$router.push(`/device/${this.id}/update`)
+      this.$router.push(`/org/device/${this.id}/update`)
     }
   }
 }

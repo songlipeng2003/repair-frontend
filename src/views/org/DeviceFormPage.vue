@@ -59,14 +59,14 @@ export default {
   methods: {
     createAction () {
       OrgDevice.save(this.device).then((res) => {
-        this.$router.push('/device')
+        this.$router.push('/org/device')
       }).catch((response) => {
         MessageBox.alert(response.body.message)
       })
     },
     updateAction () {
       OrgDevice.save(this.device).then((res) => {
-        this.$router.push('/device')
+        this.$router.push('/org/device')
       }).catch((response) => {
         MessageBox.alert(response.body.message)
       })

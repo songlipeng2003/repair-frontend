@@ -61,14 +61,14 @@ export default {
   methods: {
     createAction () {
       SchoolDevice.save(this.device).then((res) => {
-        this.$router.push('/device')
+        this.$router.push('/school/device')
       }).catch((response) => {
         MessageBox.alert(response.body.message)
       })
     },
     updateAction () {
       SchoolDevice.save(this.device).then((res) => {
-        this.$router.push('/device')
+        this.$router.push('/school/device')
       }).catch((response) => {
         MessageBox.alert(response.body.message)
       })

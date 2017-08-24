@@ -49,7 +49,7 @@ export const SchoolHome = Vue.resource(
 )
 
 export const SchoolProject = Vue.resource(
-  'org/v1/projects{/id}'
+  'school/v1/projects{/id}'
 )
 
 export const OrgProject = Vue.resource(

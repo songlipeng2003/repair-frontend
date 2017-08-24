@@ -12,7 +12,7 @@
     <div v-infinite-scroll="loadMore" infinite-scroll-disabled="disableLoadMore" infinite-scroll-distance="0" infinite-scroll-listen-for-event="refreshData">
       <mt-loadmore :top-method="refresh" ref="loadmore">
         <div v-for="repair in repairs" :key="repair.id" class="card">
-          <router-link :to="'repair/' + repair.id">
+          <router-link :to="'/school/repair/' + repair.id">
             编号:{{repair.code}}<br/>
             设备:{{repair.device.name}}<br/>
             项目:{{repair.project_name}}<br/>
